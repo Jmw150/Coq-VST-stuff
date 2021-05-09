@@ -1,0 +1,16 @@
+#!/bin/bash
+
+program=parse.py
+pretty_printer=astyle
+
+for i in {1..10} # n tests
+do
+    # type check python
+    #mypy $program 
+
+    echo "test$i"
+    python3 $program tests/test$i.c > testout.c
+    $pretty_printer testout.c > /dev/null
+    diff testout.c outputs/test$i.c
+    rm testout.c
+done
