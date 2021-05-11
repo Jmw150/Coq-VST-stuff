@@ -1,40 +1,11 @@
-# Coq verified software toolchain unfinished features
+# Symbolic artificial intelligence
 
-## Current Project Milestones
+https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence
 
-- struct-copying assignments (problem: naturally recursive reasoning)
+GOFAI is an area that has many modern areas such as
 
-    * Make prototype in easier language (python)
+- Logical solvers
 
-        + Test: before and after transformations
+- Program synthesis
 
-    * Make Coq module to transform clight syntax tree
-
-        + Test: before and after clight syntax trees
-
-- struct parameters
-
-- struct returns
-
-## Possible Future Projects
-
--  casting between integers and pointers.
-
-    * Approach: May be able to change the axioms and create abstraction layer.
-
-    * Problem: Characterizes direct memory access "int* ptr = 10;" 
-    
-        + Sound may not automatically mean safe in this case
-
-        + Solution: Could include a way to give a safe memory map with C code
-
--  goto statements.
-
-    * parses at least, does not recognize loop tactics
-
--  structured switch statements (Duff's device).
-
-    * Could be done in theory I think (without performance cost)
-
-    * Or the optimization technique could be ignored and turned into a simple for loop
-
+- Program verification
