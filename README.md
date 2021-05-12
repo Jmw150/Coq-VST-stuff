@@ -10,7 +10,7 @@ GOFAI (Symbolic heavy artificial intelligence) is an area with a rich history an
 
 - Logical solvers (automated reasoning)
 
-    - usecases: analytic solvers (neural nets, vectopr machines, etc) handle low computation high convergence problems
+    - usecases: analytic solvers (neural nets, vector machines, etc) handle low computation high convergence problems
 
     - starter literature:
 
@@ -19,11 +19,13 @@ GOFAI (Symbolic heavy artificial intelligence) is an area with a rich history an
 
 - Program synthesis
 
-    - usecases: generative programs, self healing code, constraint based programming
+    - usecases: generative programs (synthesisers), self healing code, constraint based programming
 
     - starter literature:
+            https://sygus.org/language/
 
     - tools:
+            https://github.com/purdue-cap/DryadSynth
         
 
 - Program verification
