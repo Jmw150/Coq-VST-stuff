@@ -42,7 +42,6 @@ Lemma has_ext_eq' : forall {Z} (z : Z) phi, app_pred (has_ext z) phi ->
 Proof.
   intros ??? (? & Hno & ->); simpl; split; auto.
   unfold ext_ghost; simpl; repeat f_equal.
-  apply proof_irr.
 Qed.
 
 Corollary has_ext_eq : forall {Z} (z : Z) phi, app_pred (has_ext z) phi ->
@@ -146,7 +145,6 @@ Proof.
   unfold set_ghost; rewrite resource_at_make_rmap, ghost_of_make_rmap.
   split; auto.
   unfold ext_ghost; repeat f_equal.
-  apply proof_irr.
 Qed.
 
 Lemma ext_ref_join : forall {Z} (z : Z), join (ext_ghost z) (ext_ref z) (ext_both z).
@@ -262,6 +260,7 @@ Proof.
   rewrite data_at_rec_eq in H; simpl in H.
   unfold default_val, unfold_reptype in H; simpl in H.
   unfold at_offset in H; rewrite offset_val_zero_Vptr in H.
+  unfold Zrepeat in *.
   destruct H as [_ H].
   rewrite Z.sub_0_r, Z2Nat_max0 in H.
   remember 0 as lo in H at 1.
@@ -285,7 +284,7 @@ Proof.
     rewrite data_at_rec_eq in Hr1; simpl in Hr1.
     unfold unfold_reptype in Hr1; simpl in Hr1.
     rewrite <- (Nat2Z.id n) in Hr1.
-    rewrite Znth_list_repeat_inrange in Hr1.
+    rewrite Znth_repeat_inrange in Hr1.
     unfold mapsto in Hr1; simpl in Hr1.
     rewrite if_true in Hr1 by auto.
     destruct Hr1 as [[] | (_ & ? & ? & [? Hr1] & Hg1)]; [contradiction|].

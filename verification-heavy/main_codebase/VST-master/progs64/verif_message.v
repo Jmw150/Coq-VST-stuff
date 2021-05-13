@@ -165,8 +165,6 @@ entailer!.
 split; simpl; auto.
 unfold mf_assert.
 simpl.
-
-(* lol I did a change *)
 entailer!.
 Qed.
 
