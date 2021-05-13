@@ -31,7 +31,7 @@ GOFAI (Symbolic heavy artificial intelligence) is an area with a rich history an
             https://github.com/purdue-cap/DryadSynth
         
 
-- Program verification 
+- Program verification (Keeping control of smart programs)
 
     - usecases: software security, mathematical proof writing, reducing long term maintenance of software
 
