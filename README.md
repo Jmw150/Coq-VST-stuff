@@ -1,6 +1,8 @@
 # Symbolic artificial intelligence
 
-![alt text](https://github.com/jmw150/GOFAI-labs/blob/pictures/stat-sym-ai.png?raw=true)
+![alt text](https://github.com/Jmw150/GOFAI-labs/blob/master/pictures/stat-sym-ai.png?raw=true)
+
+https://github.com/jmw150/GOFAI-labs/blob/pictures/stat-sym-ai.png?raw=true)
 
 ### Motivation
 
